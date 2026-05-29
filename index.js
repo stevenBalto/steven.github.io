@@ -1,7 +1,5 @@
-/*  Web3Forms config  */
 const W3F_ACCESS_KEY = '2adf4b5e-abef-43b5-b29f-16a5b10dc7a8';
 
-/*  Modal */
 const modal      = document.getElementById('contact-modal');
 const openBtn    = document.getElementById('open-modal');
 const closeBtn   = document.getElementById('close-modal');
@@ -73,7 +71,6 @@ AOS.init({
   offset: 55,
 });
 
-/*  Navbar scroll glass  */
 const navbar = document.getElementById('navbar');
 const onScroll = () => {
   navbar.classList.toggle('scrolled', window.scrollY > 48);
@@ -94,7 +91,6 @@ document.querySelectorAll('.mob-link').forEach(l =>
   })
 );
 
-/*  Project Showcase v2 (Peek Carousel + Grid)  */
 (function () {
   const pfeatWrap   = document.getElementById('pfeat-wrap');
   const pfeatTrack  = document.getElementById('pfeat-track');
@@ -155,7 +151,6 @@ document.querySelectorAll('.mob-link').forEach(l =>
   go(0); start();
 })();
 
-/*  Image reels (multi-image inside a slide)  */
 document.querySelectorAll('.img-reel').forEach(reel => {
   const imgs = Array.from(reel.querySelectorAll('.reel-img'));
   const container = reel.closest('.pfeat-visual') || reel.closest('.showcase-right');
@@ -181,7 +176,6 @@ document.querySelectorAll('.img-reel').forEach(reel => {
   timer = setInterval(() => go(cur + 1), 3200);
 });
 
-/*  Active section highlight  */
 const sections  = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('a.nav-link:not(.mob-link)');
 

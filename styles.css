@@ -310,14 +310,13 @@ body {
   .proj-gc-visual { flex:0 0 180px; }
 }
 
-/*  Skills  */
 .skill-card {
   background:rgba(26,32,70,.5); border:1px solid rgba(0,217,255,.07);
   border-radius:14px; padding:22px; transition:all .3s;
 }
 .skill-card:hover { border-color:rgba(0,217,255,.22); background:rgba(26,32,70,.8); transform:translateY(-4px); }
 
-/*  Contact  */
+
 .soc-icon {
   width:48px; height:48px; border:1px solid rgba(0,217,255,.2);
   border-radius:12px; display:flex; align-items:center; justify-content:center;
@@ -327,7 +326,7 @@ body {
 
 .contact-bar { width:72px; height:3px; background:linear-gradient(90deg,var(--cyan),var(--violet)); border-radius:2px; margin:0 auto 24px; }
 
-/*  Modal  */
+
 .modal-overlay {
   position:fixed; inset:0; z-index:200;
   background:rgba(5,8,20,.78); backdrop-filter:blur(10px);
@@ -361,19 +360,20 @@ body {
 .form-input:focus { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(0,217,255,.09); }
 .form-input::placeholder { color:rgba(148,163,184,.4); }
 
-/* Icon slide variants */
 .s-ring--violet-lg { --sz:230px; --c:rgba(124,58,237,.16); }
 .s-ring--violet-sm { --sz:155px; --c:rgba(124,58,237,.1);  }
 .s-ring--cyan-lg   { --sz:230px; --c:rgba(97,218,251,.15); }
 .s-ring--cyan-sm   { --sz:155px; --c:rgba(97,218,251,.1);  }
 .s-icon--violet { color:rgba(167,139,250,.88); filter:drop-shadow(0 0 36px rgba(124,58,237,.55)); }
 .s-icon--cyan   { color:rgba(97,218,251,.88);  filter:drop-shadow(0 0 36px rgba(97,218,251,.48)); }
+.s-ring--green-lg { --sz:230px; --c:rgba(37,211,102,.16); }
+.s-ring--green-sm { --sz:155px; --c:rgba(37,211,102,.1);  }
+.s-icon--green    { color:rgba(37,211,102,.88); filter:drop-shadow(0 0 36px rgba(37,211,102,.55)); }
 
-/* proj-gc icon variants */
 .proj-gc-icon--violet { color:rgba(167,139,250,.88); font-size:3.5rem; filter:drop-shadow(0 0 22px rgba(124,58,237,.5)); }
 .proj-gc-icon--cyan   { color:rgba(97,218,251,.88);  font-size:3.5rem; filter:drop-shadow(0 0 22px rgba(97,218,251,.4)); }
+.proj-gc-icon--green  { color:rgba(37,211,102,.88);  font-size:3.5rem; filter:drop-shadow(0 0 22px rgba(37,211,102,.5)); }
 
-/* Skill icon brand colors */
 .ic-react     { color:#61DAFB; }
 .ic-js        { color:#F7DF1E; }
 .ic-html      { color:#E34F26; }
@@ -394,7 +394,6 @@ body {
 .ic-npm       { color:#CB3837; }
 .ic-figma     { color:#F24E1E; }
 
-/* Misc */
 .text-faded { color:rgba(148,163,184,.35); }
 footer { border-color:rgba(0,217,255,.07); }
 #cf-success i { color:#22c55e; }
