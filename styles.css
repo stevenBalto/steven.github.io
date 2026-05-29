@@ -369,9 +369,13 @@ body {
 .s-ring--green-lg { --sz:230px; --c:rgba(37,211,102,.16); }
 .s-ring--green-sm { --sz:155px; --c:rgba(37,211,102,.1);  }
 .s-icon--green    { color:rgba(37,211,102,.88); filter:drop-shadow(0 0 36px rgba(37,211,102,.55)); }
+.s-ring--green-lg { --sz:230px; --c:rgba(37,211,102,.16); }
+.s-ring--green-sm { --sz:155px; --c:rgba(37,211,102,.1);  }
+.s-icon--green    { color:rgba(37,211,102,.88); filter:drop-shadow(0 0 36px rgba(37,211,102,.55)); }
 
 .proj-gc-icon--violet { color:rgba(167,139,250,.88); font-size:3.5rem; filter:drop-shadow(0 0 22px rgba(124,58,237,.5)); }
 .proj-gc-icon--cyan   { color:rgba(97,218,251,.88);  font-size:3.5rem; filter:drop-shadow(0 0 22px rgba(97,218,251,.4)); }
+.proj-gc-icon--green  { color:rgba(37,211,102,.88);  font-size:3.5rem; filter:drop-shadow(0 0 22px rgba(37,211,102,.5)); }
 .proj-gc-icon--green  { color:rgba(37,211,102,.88);  font-size:3.5rem; filter:drop-shadow(0 0 22px rgba(37,211,102,.5)); }
 
 .ic-react     { color:#61DAFB; }
