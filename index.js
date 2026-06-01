@@ -102,8 +102,8 @@ document.querySelectorAll('.mob-link').forEach(l =>
   let timer;
 
   function translate(realIdx) {
-    const sw  = pfeatWrap.offsetWidth - 200;
-    const off = 100 - realIdx * (sw + 20);
+    const sw  = pfeatWrap.offsetWidth - 320;
+    const off = 160 - realIdx * (sw + 20);
     pfeatTrack.style.transform = `translateX(${off}px)`;
   }
 
