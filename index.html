@@ -1,680 +1,512 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Steven Baltodano — Full Stack Developer</title>
-  <meta name="description" content="Portfolio de Steven Baltodano, Full Stack Developer e ITI Student en UTN Guanacaste, Costa Rica." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steven Baltodano | Full Stack Developer</title>
+  <meta name="description" content="Portfolio de Steven Baltodano, Full Stack Developer e ITI Student en UTN Guanacaste, Costa Rica.">
 
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
-
- 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy:      '#0A0E27',
-            'navy-2':  '#151B3B',
-            card:      '#1A2046',
-            cyan:      '#C9A84C',
-            violet:    '#8B6914',
-            muted:     '#94A3B8',
-          },
-          fontFamily: {
-            grotesk:  ['Space Grotesk', 'sans-serif'],
-            mono:     ['JetBrains Mono', 'monospace'],
-          },
-        }
-      }
-    }
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+  <div class="ambient"></div>
 
-<body class="bg-navy font-grotesk text-white">
+  <header class="site-header" id="navbar">
+    <div class="header-inner container">
+      <a href="#inicio" class="brand">Steven Baltodano</a>
 
-
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
-  <div class="grid-bg"></div>
-
-
-  <nav id="navbar" class="fixed top-0 inset-x-0 z-50 py-4 px-6 lg:px-14">
-    <div class="max-w-6xl mx-auto flex items-center justify-between">
-
-      <!-- Logo -->
-      <a href="#hero" class="font-mono text-lg font-bold select-none">
-        &lt;<span class="grad-text">SB</span>/&gt;
-      </a>
-
-
-      <div class="hidden md:flex items-center gap-8">
-        <a href="#projects" class="nav-link"><span class="text-cyan mr-1">01.</span>Projects</a>
-        <a href="#skills"   class="nav-link"><span class="text-cyan mr-1">02.</span>Skills</a>
-        <a href="#contact"  class="nav-link"><span class="text-cyan mr-1">03.</span>Contact</a>
-      </div>
-
-
-      <div class="flex items-center gap-4">
-        <a href="#" class="cv-btn hidden">
-          <i class="fa-regular fa-file-lines text-xs"></i> Descargar CV
-        </a>
-        <button id="hamburger" class="md:hidden flex flex-col p-1 focus:outline-none" aria-label="Menu">
-          <span class="hb-line"></span>
-          <span class="hb-line"></span>
-          <span class="hb-line"></span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="md:hidden mt-3 pb-4 border-t border-white/5">
-      <div class="flex flex-col gap-5 pt-5 px-2">
-        <a href="#projects" class="nav-link mob-link"><span class="text-cyan mr-1">01.</span>Projects</a>
-        <a href="#skills"   class="nav-link mob-link"><span class="text-cyan mr-1">02.</span>Skills</a>
-        <a href="#contact"  class="nav-link mob-link"><span class="text-cyan mr-1">03.</span>Contact</a>
-        <a href="#" class="cv-btn self-start mt-1 hidden">
-          <i class="fa-regular fa-file-lines text-xs"></i> Descargar CV
-        </a>
-      </div>
-    </div>
-  </nav>
-
-  <section id="hero" class="layer min-h-screen flex items-center px-6 lg:px-14 pt-24 pb-16">
-    <div class="max-w-6xl mx-auto w-full">
-      <div class="max-w-3xl">
-
-        <div class="inline-flex items-center gap-2 mb-8 px-3 py-1.5 rounded-full border border-white/20 bg-white/5"
-             data-aos="fade-up" data-aos-delay="80">
-          <div class="status-dot"></div>
-          <span class="font-mono text-xs text-white">Disponible para oportunidades</span>
-        </div>
-
-        <p class="font-mono text-sm mb-3 text-cyan" data-aos="fade-up" data-aos-delay="130">
-          &gt;_ Hola, soy 
-        </p>
-
-        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-4"
-            data-aos="fade-up" data-aos-delay="180">
-          <span class="grad-text">Steven</span><br>
-          <span class="text-white">Baltodano</span><span class="cursor"></span>
-        </h1>
-
-        <h2 class="text-xl lg:text-2xl font-medium mb-6 text-muted"
-            data-aos="fade-up" data-aos-delay="220">
-          Full Stack Developer &amp; ITI Student
-        </h2>
-
-        <p class="max-w-xl text-muted leading-relaxed mb-9"
-           data-aos="fade-up" data-aos-delay="260">
-          Desarrollador Full Stack enfocado en construir soluciones digitales completas — aplicaciones web, móviles, APIs y sistemas de gestión. Estudiante de ITI en la
-          <span class="text-white font-medium">Universidad Técnica Nacional de Guanacaste</span>.
-        </p>
-
-        <div class="flex flex-wrap gap-4 mb-10" data-aos="fade-up" data-aos-delay="310">
-          <a href="#projects" class="btn-primary">
-            <i class="fa-solid fa-code-branch text-sm"></i> Ver Proyectos
-          </a>
-          <a href="#contact" class="btn-outline">
-            <i class="fa-regular fa-envelope text-sm"></i> Contactarme
-          </a>
-        </div>
-
-        <div class="flex flex-wrap gap-2" data-aos="fade-up" data-aos-delay="360">
-          <span class="tech-pill">React</span>
-          <span class="tech-pill">TypeScript</span>
-          <span class="tech-pill">JavaScript</span>
-          <span class="tech-pill">Tailwind CSS</span>
-          <span class="tech-pill">React Native</span>
-          <span class="tech-pill">Node.js</span>
-          <span class="tech-pill">PostgreSQL</span>
-          <span class="tech-pill">Cordova</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="layer bg-alt py-28 px-6 lg:px-14">
-    <div class="max-w-6xl mx-auto">
-
-      <div class="flex items-center gap-4 mb-8" data-aos="fade-up">
-        <span class="sec-num">01.</span>
-        <h2 class="text-3xl font-bold">Proyectos</h2>
-        <div class="sep-line"></div>
-      </div>
-
-      <div class="flex flex-wrap gap-3 mb-12" data-aos="fade-up" data-aos-delay="80">
-        <button class="f-btn active" data-filter="all">Todos</button>
-        <button class="f-btn" data-filter="personal">Personal</button>
-        <button class="f-btn" data-filter="utn">UTN</button>
-      </div>
-
-      <div class="proj-showcase-v2" data-aos="fade-up" data-aos-delay="100">
-
-        <!-- Featured card (large) -->
-        <div class="pfeat-wrap" id="pfeat-wrap">
-          <div class="pfeat-track" id="pfeat-track">
-
-          <div class="pfeat-slide active" data-cat="personal">
-            <div class="pfeat-visual pfeat-icon-bg">
-              <div class="showcase-icon-wrap">
-                <div class="s-ring s-ring--green-lg"></div>
-                <div class="s-ring s-ring--green-sm"></div>
-                <i class="fa-brands fa-whatsapp s-icon s-icon--green"></i>
-              </div>
-            </div>
-            <div class="pfeat-grad"></div>
-            <div class="pfeat-info">
-              <span class="badge-cyan inline-block">Personal</span>
-              <h3 class="pfeat-title">WhatsApp API</h3>
-              <div class="pfeat-pills">
-                <span class="stack-pill">Node.js</span>
-                <span class="stack-pill">Express</span>
-                <span class="stack-pill">TypeScript</span>
-                <span class="stack-pill">whatsapp-web.js</span>
-                <span class="stack-pill">Zod</span>
-                <span class="stack-pill">pnpm</span>
-              </div>
-              <a href="https://github.com/stevenBalto/API-de-whatsApp.local" target="_blank" rel="noopener" class="pfeat-link">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-
-          <div class="pfeat-slide" data-cat="personal">
-            <div class="pfeat-visual pfeat-icon-bg">
-              <div class="showcase-icon-wrap">
-                <div class="s-ring s-ring--violet-lg"></div>
-                <div class="s-ring s-ring--violet-sm"></div>
-                <i class="fa-solid fa-id-card s-icon s-icon--violet"></i>
-              </div>
-            </div>
-            <div class="pfeat-grad"></div>
-            <div class="pfeat-info">
-              <span class="badge-cyan inline-block">Personal</span>
-              <h3 class="pfeat-title">Portfolio Personal</h3>
-              <div class="pfeat-pills">
-                <span class="stack-pill">HTML</span>
-                <span class="stack-pill">Tailwind CSS</span>
-                <span class="stack-pill">JavaScript</span>
-                <span class="stack-pill">AOS</span>
-              </div>
-              <a href="https://github.com/stevenBalto" target="_blank" rel="noopener" class="pfeat-link">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-
-          <div class="pfeat-slide" data-cat="utn">
-            <div class="pfeat-visual">
-              <div class="img-reel">
-                <img src="assets/imgCRMBASTOS2.png" alt="Dashboard" class="reel-img active">
-                <img src="assets/imgCRMBASTOS4.png" alt="Registro de Cliente" class="reel-img">
-                <img src="assets/imgCRMBASTOS3.png" alt="Cumpleaños" class="reel-img">
-                <img src="assets/imgCRMBASTOS.png"  alt="Login" class="reel-img">
-              </div>
-              <div class="reel-dots pfeat-reel-dots">
-                <button class="reel-dot active"></button>
-                <button class="reel-dot"></button>
-                <button class="reel-dot"></button>
-                <button class="reel-dot"></button>
-              </div>
-            </div>
-            <div class="pfeat-grad"></div>
-            <div class="pfeat-info">
-              <span class="badge-violet inline-block">UTN</span>
-              <h3 class="pfeat-title">CRM Restaurante Bastos</h3>
-              <div class="pfeat-pills">
-                <span class="stack-pill">React</span>
-                <span class="stack-pill">Node.js</span>
-                <span class="stack-pill">PostgreSQL</span>
-                <span class="stack-pill">CRM</span>
-              </div>
-              <a href="https://www.utn.ac.cr/estudiantes-sede-guanacaste-desarrollan-soluciones-tecnologicas-empresas-comite-emergencias" target="_blank" rel="noopener" class="pfeat-link">
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> Artículo
-              </a>
-            </div>
-          </div>
-
-          <div class="pfeat-slide" data-cat="utn">
-            <div class="pfeat-visual">
-              <div class="img-reel">
-                <img src="assets/imgCalculogame.png"  alt="Juego pantalla principal" class="reel-img active">
-                <img src="assets/imgCalculogame1.png" alt="Acertijo integral" class="reel-img">
-                <img src="assets/imgCalculogame2.png" alt="Resolución del crimen" class="reel-img">
-                <img src="assets/imgCalculogame3.png" alt="Pantalla 3" class="reel-img">
-                <img src="assets/imgCalculogame4.png" alt="Pantalla 4" class="reel-img">
-              </div>
-              <div class="reel-dots pfeat-reel-dots">
-                <button class="reel-dot active"></button>
-                <button class="reel-dot"></button>
-                <button class="reel-dot"></button>
-                <button class="reel-dot"></button>
-                <button class="reel-dot"></button>
-              </div>
-            </div>
-            <div class="pfeat-grad"></div>
-            <div class="pfeat-info">
-              <span class="badge-violet inline-block">UTN</span>
-              <h3 class="pfeat-title">Integral Detective Game</h3>
-              <div class="pfeat-pills">
-                <span class="stack-pill">JavaScript</span>
-                <span class="stack-pill">HTML</span>
-                <span class="stack-pill">CSS</span>
-                <span class="stack-pill">Cálculo</span>
-              </div>
-              <a href="https://github.com/stevenBalto" target="_blank" rel="noopener" class="pfeat-link">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-
-          <div class="pfeat-slide" data-cat="utn">
-            <div class="pfeat-visual pfeat-icon-bg">
-              <div class="showcase-icon-wrap">
-                <div class="s-ring s-ring--cyan-lg"></div>
-                <div class="s-ring s-ring--cyan-sm"></div>
-                <i class="fa-brands fa-react s-icon s-icon--cyan"></i>
-              </div>
-            </div>
-            <div class="pfeat-grad"></div>
-            <div class="pfeat-info">
-              <span class="badge-violet inline-block">UTN</span>
-              <h3 class="pfeat-title">CRUD React Native</h3>
-              <div class="pfeat-pills">
-                <span class="stack-pill">React Native</span>
-                <span class="stack-pill">JavaScript</span>
-                <span class="stack-pill">Android</span>
-              </div>
-              <a href="https://github.com/stevenBalto" target="_blank" rel="noopener" class="pfeat-link">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
-
-          </div>
-
-          <button class="pfeat-arrow pfeat-prev" id="pfeat-prev" aria-label="Anterior">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <button class="pfeat-arrow pfeat-next" id="pfeat-next" aria-label="Siguiente">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-
-        </div>
-
-        <div class="proj-grid" id="proj-grid">
-
-          <div class="proj-gc active" data-cat="personal" data-pfeat-idx="0">
-            <div class="proj-gc-info">
-              <div>
-                <div class="proj-gc-header">
-                  <h4 class="proj-gc-title">WhatsApp API</h4>
-                  <a href="https://github.com/stevenBalto/API-de-whatsApp.local" target="_blank" rel="noopener" class="proj-gc-ext"><i class="fa-brands fa-github"></i><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <ul class="proj-gc-desc">
-                  <li><span class="proj-gc-arr">›</span> REST API para enviar mensajes de WhatsApp desde cualquier aplicación.</li>
-                  <li><span class="proj-gc-arr">›</span> Plantillas con variables y mensajes programados por fecha y hora.</li>
-                  <li><span class="proj-gc-arr">›</span> Autenticación con API Key y sesión persistente mediante código QR.</li>
-                </ul>
-              </div>
-              <div class="proj-gc-pills">
-                <span class="stitch-pill">Node.js</span>
-                <span class="stitch-pill">Express</span>
-                <span class="stitch-pill">TypeScript</span>
-                <span class="stitch-pill">whatsapp-web.js</span>
-                <span class="stitch-pill">Zod</span>
-                <span class="stitch-pill">pnpm</span>
-              </div>
-            </div>
-            <div class="proj-gc-visual proj-gc-icon">
-              <i class="fa-brands fa-whatsapp proj-gc-icon--green"></i>
-              <span class="proj-gc-status">API_LIVE</span>
-            </div>
-          </div>
-
-          <div class="proj-gc" data-cat="personal" data-pfeat-idx="1">
-            <div class="proj-gc-info">
-              <div>
-                <div class="proj-gc-header">
-                  <h4 class="proj-gc-title">Portfolio Personal</h4>
-                  <a href="https://github.com/stevenBalto" target="_blank" rel="noopener" class="proj-gc-ext"><i class="fa-brands fa-github"></i><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <ul class="proj-gc-desc">
-                  <li><span class="proj-gc-arr">›</span> Diseño responsivo con Tailwind CSS y animaciones AOS.</li>
-                  <li><span class="proj-gc-arr">›</span> Formulario de contacto con Web3Forms.</li>
-                  <li><span class="proj-gc-arr">›</span> Desplegado en GitHub Pages.</li>
-                </ul>
-              </div>
-              <div class="proj-gc-pills">
-                <span class="stitch-pill">HTML</span>
-                <span class="stitch-pill">Tailwind CSS</span>
-                <span class="stitch-pill">JavaScript</span>
-                <span class="stitch-pill">AOS</span>
-              </div>
-            </div>
-            <div class="proj-gc-visual proj-gc-icon">
-              <i class="fa-solid fa-id-card proj-gc-icon--violet"></i>
-              <span class="proj-gc-status">PORTFOLIO</span>
-            </div>
-          </div>
-
-          <div class="proj-gc" data-cat="utn" data-pfeat-idx="2">
-            <div class="proj-gc-info">
-              <div>
-                <div class="proj-gc-header">
-                  <h4 class="proj-gc-title">CRM Restaurante Bastos</h4>
-                  <a href="https://www.utn.ac.cr/estudiantes-sede-guanacaste-desarrollan-soluciones-tecnologicas-empresas-comite-emergencias" target="_blank" rel="noopener" class="proj-gc-ext"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <ul class="proj-gc-desc">
-                  <li><span class="proj-gc-arr">›</span> Dashboard con métricas de clientes y ventas.</li>
-                  <li><span class="proj-gc-arr">›</span> Sistema de alertas de cumpleaños automático.</li>
-                  <li><span class="proj-gc-arr">›</span> Autenticación con JWT y roles de usuario.</li>
-                </ul>
-              </div>
-              <div class="proj-gc-pills">
-                <span class="stitch-pill">React</span>
-                <span class="stitch-pill">Node.js</span>
-                <span class="stitch-pill">PostgreSQL</span>
-                <span class="stitch-pill">CRM</span>
-              </div>
-            </div>
-            <div class="proj-gc-visual">
-              <img src="assets/imgCRMBASTOS2.png" alt="CRM Bastos" class="proj-gc-img">
-              <div class="proj-gc-img-grad"></div>
-              <span class="proj-gc-status">CRM_ACTIVE</span>
-            </div>
-          </div>
-
-          <div class="proj-gc" data-cat="utn" data-pfeat-idx="3">
-            <div class="proj-gc-info">
-              <div>
-                <div class="proj-gc-header">
-                  <h4 class="proj-gc-title">Integral Detective Game</h4>
-                  <a href="https://github.com/stevenBalto" target="_blank" rel="noopener" class="proj-gc-ext"><i class="fa-brands fa-github"></i><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <ul class="proj-gc-desc">
-                  <li><span class="proj-gc-arr">›</span> Juego de detectives con acertijos de cálculo integral.</li>
-                  <li><span class="proj-gc-arr">›</span> Narrativa interactiva: atrapa al asesino resolviendo integrales.</li>
-                  <li><span class="proj-gc-arr">›</span> Desarrollado con JavaScript, HTML y CSS puro.</li>
-                </ul>
-              </div>
-              <div class="proj-gc-pills">
-                <span class="stitch-pill">JavaScript</span>
-                <span class="stitch-pill">HTML</span>
-                <span class="stitch-pill">CSS</span>
-                <span class="stitch-pill">Cálculo</span>
-              </div>
-            </div>
-            <div class="proj-gc-visual">
-              <img src="assets/imgCalculogame.png" alt="Integral Detective" class="proj-gc-img">
-              <div class="proj-gc-img-grad"></div>
-              <span class="proj-gc-status">GAME_LIVE</span>
-            </div>
-          </div>
-
-          <div class="proj-gc" data-cat="utn" data-pfeat-idx="4">
-            <div class="proj-gc-info">
-              <div>
-                <div class="proj-gc-header">
-                  <h4 class="proj-gc-title">CRUD React Native</h4>
-                  <a href="https://github.com/stevenBalto" target="_blank" rel="noopener" class="proj-gc-ext"><i class="fa-brands fa-github"></i><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <ul class="proj-gc-desc">
-                  <li><span class="proj-gc-arr">›</span> App Android nativa con operaciones CRUD completas.</li>
-                  <li><span class="proj-gc-arr">›</span> Almacenamiento local con AsyncStorage.</li>
-                  <li><span class="proj-gc-arr">›</span> Navegación entre pantallas con React Navigation.</li>
-                </ul>
-              </div>
-              <div class="proj-gc-pills">
-                <span class="stitch-pill">React Native</span>
-                <span class="stitch-pill">JavaScript</span>
-                <span class="stitch-pill">Android</span>
-              </div>
-            </div>
-            <div class="proj-gc-visual proj-gc-icon">
-              <i class="fa-brands fa-react proj-gc-icon--cyan"></i>
-              <span class="proj-gc-status">MOBILE_APP</span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="layer py-28 px-6 lg:px-14">
-    <div class="max-w-6xl mx-auto">
-
-      <div class="flex items-center gap-4 mb-16" data-aos="fade-up">
-        <span class="sec-num">02.</span>
-        <h2 class="text-3xl font-bold">Habilidades</h2>
-        <div class="sep-line"></div>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-
-
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="80">
-          <div class="flex items-center gap-3 mb-5">
-            <i class="fa-solid fa-desktop text-xl text-cyan"></i>
-            <h3 class="font-bold text-white">Frontend</h3>
-          </div>
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-react w-5 text-center ic-react"></i> React / React 19
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-js w-5 text-center ic-js"></i> JavaScript / TypeScript
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-html5 w-5 text-center ic-html"></i> HTML5
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-css3-alt w-5 text-center ic-css"></i> CSS3 / Tailwind
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-bootstrap w-5 text-center ic-bootstrap"></i> Bootstrap
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-map w-5 text-center ic-leaflet"></i> Leaflet.js
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="140">
-          <div class="flex items-center gap-3 mb-5">
-            <i class="fa-solid fa-server text-xl ic-violet"></i>
-            <h3 class="font-bold text-white">Backend</h3>
-          </div>
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-node-js w-5 text-center ic-node"></i> Node.js
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-bolt w-5 text-center ic-js"></i> Express.js
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-database w-5 text-center ic-pg"></i> PostgreSQL
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-cloud w-5 text-center ic-cloud"></i> Cloudinary
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-code w-5 text-center text-cyan"></i> REST APIs
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-lock w-5 text-center ic-amber"></i> Auth / JWT
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="flex items-center gap-3 mb-5">
-            <i class="fa-solid fa-mobile-screen text-xl ic-green"></i>
-            <h3 class="font-bold text-white">Mobile</h3>
-          </div>
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-react w-5 text-center ic-react"></i> React Native
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-android w-5 text-center ic-android"></i> Android
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-plug w-5 text-center ic-cordova"></i> Apache Cordova
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-location-dot w-5 text-center ic-gps"></i> GPS / Geolocation
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-camera w-5 text-center text-muted"></i> Camera API
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-mobile w-5 text-center text-cyan"></i> LocalStorage
-            </li>
-          </ul>
-        </div>
-
-   
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="260">
-          <div class="flex items-center gap-3 mb-5">
-            <i class="fa-solid fa-wrench text-xl ic-amber"></i>
-            <h3 class="font-bold text-white">Tools</h3>
-          </div>
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-git-alt w-5 text-center ic-git"></i> Git / GitHub
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-atom w-5 text-center ic-blue"></i> Zustand
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-solid fa-terminal w-5 text-center text-cyan"></i> VS Code
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-npm w-5 text-center ic-npm"></i> npm / yarn
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-figma w-5 text-center ic-figma"></i> Figma
-            </li>
-            <li class="flex items-center gap-3 text-sm text-muted">
-              <i class="fa-brands fa-github w-5 text-center text-muted"></i> GitHub Pages
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="layer bg-alt py-28 px-6 lg:px-14 text-center">
-    <div class="max-w-xl mx-auto">
-
-      <p class="sec-num block mb-4" data-aos="fade-up">03.</p>
-      <div class="contact-bar" data-aos="fade-up" data-aos-delay="50"></div>
-
-      <h2 class="text-4xl lg:text-5xl font-bold grad-text mb-5"
-          data-aos="fade-up" data-aos-delay="100">
-        Trabajemos juntos
-      </h2>
-
-      <p class="text-muted text-lg mb-10 leading-relaxed"
-         data-aos="fade-up" data-aos-delay="150">
-        Estoy abierto a oportunidades laborales, proyectos freelance, o simplemente
-        charlar sobre tecnología. ¡No dudes en escribirme!
-      </p>
-
-    
-      <div data-aos="fade-up" data-aos-delay="200">
-        <button id="open-modal" class="btn-primary text-base px-8 py-4 mx-auto">
-          <i class="fa-regular fa-envelope"></i>
-          Enviar mensaje
-        </button>
-      </div>
-
-
-      <div class="flex items-center justify-center gap-4 mt-10"
-           data-aos="fade-up" data-aos-delay="260">
-        <a href="https://github.com/stevenBalto" target="_blank" rel="noopener"
-           class="soc-icon" aria-label="GitHub">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-
-  <footer class="layer py-8 px-6 text-center border-t">
-    <p class="font-mono text-sm text-muted">
-      Built by <span class="text-cyan">Steven Baltodano</span> &copy; 2026
-      &mdash; Guanacaste, Costa Rica
-    </p>
-    <p class="text-xs mt-1 text-faded">Diseñado con HTML</p>
-  </footer>
-
-
-  <div id="contact-modal" class="modal-overlay" aria-hidden="true">
-    <div class="modal-box glass" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-      <button id="close-modal" class="modal-close" aria-label="Cerrar">
-        <i class="fa-solid fa-xmark"></i>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
       </button>
 
-      <h3 id="modal-title" class="text-xl font-bold text-white mb-1">Enviar mensaje</h3>
-      <p class="text-sm text-muted mb-6">Te respondo lo antes posible.</p>
-
-      <form id="contact-form" novalidate>
-        <div class="mb-4">
-          <label class="form-label" for="cf-name">Nombre</label>
-          <input type="text" id="cf-name" name="from_name"
-                 class="form-input" placeholder="Tu nombre" required />
-        </div>
-        <div class="mb-4">
-          <label class="form-label" for="cf-email">Correo</label>
-          <input type="email" id="cf-email" name="from_email"
-                 class="form-input" placeholder="tu@email.com" required />
-        </div>
-        <div class="mb-6">
-          <label class="form-label" for="cf-msg">Mensaje</label>
-          <textarea id="cf-msg" name="message" rows="4"
-                    class="form-input resize-none" placeholder="Hola Steven..." required></textarea>
-        </div>
-        <button type="submit" id="cf-submit" class="btn-primary w-full justify-center">
-          <i class="fa-regular fa-paper-plane"></i>
-          <span id="cf-btn-text">Enviar</span>
+      <nav class="main-nav" id="main-nav">
+        <a href="#inicio" class="nav-link active">Home</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#proyectos" class="nav-link">Projects</a>
+        <a href="#contacto" class="nav-link">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+          <i class="fa-regular fa-moon"></i>
         </button>
-      </form>
-
-      <div id="cf-success" class="hidden mt-6 text-center">
-        <i class="fa-solid fa-circle-check text-4xl mb-3 block"></i>
-        <p class="text-white font-semibold">¡Mensaje enviado!</p>
-        <p class="text-sm text-muted mt-1">Gracias, te respondo pronto.</p>
-      </div>
-
-      <div id="cf-error" class="hidden mt-4 text-center text-sm">
-        <i class="fa-solid fa-triangle-exclamation mr-1"></i>
-        Algo salió mal. Intenta de nuevo.
-      </div>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <main>
+    <section id="inicio" class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="work-badge">
+            <i class="fa-solid fa-sparkles"></i>
+            Available for Work
+          </div>
+
+          <h1>
+            Hello, I'm<br>
+            <span>Steven Baltodano</span>
+          </h1>
+
+          <p class="lead">
+            Full Stack Developer &amp; ITI Student at UTN Guanacaste, Costa Rica.
+          </p>
+
+          <p class="sub-lead">
+            Full stack developer with a strong backend focus — building REST APIs, database-driven systems, and real-world applications with Node.js, Express, and PostgreSQL.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-light"><i class="fa-regular fa-envelope"></i> Contact Me</a>
+            <a href="#proyectos" class="btn btn-dark">View My Work</a>
+          </div>
+
+          <div class="social-row">
+            <a href="https://github.com/stevenBalto" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:stevenbaltodano52@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-ring"></div>
+          <div class="portrait-wrap">
+            <div class="portrait-initials">SB</div>
+          </div>
+
+          <div class="hire-badge">
+            <span class="dot"></span>
+            Available for hire
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-foot container">
+        <div class="stats-row">
+          <div class="stat">
+            <h3>5+</h3>
+            <p>Projects Built</p>
+          </div>
+          <div class="stat">
+            <h3>2+</h3>
+            <p>Years Coding</p>
+          </div>
+          <div class="stat">
+            <h3>10+</h3>
+            <p>Technologies</p>
+          </div>
+        </div>
+
+        <a href="#skills" class="scroll-cue">
+          Scroll to explore
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="skills" class="section-pad skills-section">
+      <div class="container">
+        <header class="skills-head">
+          <h2>Skills &amp; Technologies</h2>
+          <p>The technologies and tools I work with to build modern web and mobile applications.</p>
+        </header>
+
+        <div class="skills-grid">
+          <div class="skills-proficiency">
+            <h3>Proficiency</h3>
+
+            <div class="skill-meter" style="--pct: 90%">
+              <div class="skill-top">
+                <span>JavaScript</span>
+                <span class="pct">90%</span>
+              </div>
+              <div class="bar"><div class="fill"></div></div>
+            </div>
+
+            <div class="skill-meter" style="--pct: 85%">
+              <div class="skill-top">
+                <span>React</span>
+                <span class="pct">85%</span>
+              </div>
+              <div class="bar"><div class="fill"></div></div>
+            </div>
+
+            <div class="skill-meter" style="--pct: 80%">
+              <div class="skill-top">
+                <span>Node.js / Express</span>
+                <span class="pct">80%</span>
+              </div>
+              <div class="bar"><div class="fill"></div></div>
+            </div>
+
+            <div class="skill-meter" style="--pct: 78%">
+              <div class="skill-top">
+                <span>TypeScript</span>
+                <span class="pct">78%</span>
+              </div>
+              <div class="bar"><div class="fill"></div></div>
+            </div>
+
+            <div class="skill-meter" style="--pct: 75%">
+              <div class="skill-top">
+                <span>PostgreSQL</span>
+                <span class="pct">75%</span>
+              </div>
+              <div class="bar"><div class="fill"></div></div>
+            </div>
+
+            <div class="skill-meter" style="--pct: 70%">
+              <div class="skill-top">
+                <span>React Native</span>
+                <span class="pct">70%</span>
+              </div>
+              <div class="bar"><div class="fill"></div></div>
+            </div>
+          </div>
+
+          <div class="skills-cards">
+            <article class="skills-card">
+              <h3>Frontend</h3>
+              <div class="pill-row">
+                <span class="pill">React</span>
+                <span class="pill">TypeScript</span>
+                <span class="pill">JavaScript</span>
+                <span class="pill">HTML5</span>
+                <span class="pill">CSS3</span>
+                <span class="pill">Tailwind CSS</span>
+                <span class="pill">React Native</span>
+                <span class="pill">Zustand</span>
+                <span class="pill">Cordova</span>
+              </div>
+            </article>
+
+            <article class="skills-card">
+              <h3>Backend</h3>
+              <div class="pill-row">
+                <span class="pill">Node.js</span>
+                <span class="pill">Express.js</span>
+                <span class="pill">PHP</span>
+                <span class="pill">Laravel</span>
+                <span class="pill">Java</span>
+                <span class="pill">REST API</span>
+                <span class="pill">Zod</span>
+              </div>
+            </article>
+
+            <article class="skills-card">
+              <h3>Database</h3>
+              <div class="pill-row">
+                <span class="pill">PostgreSQL</span>
+                <span class="pill">MySQL</span>
+                <span class="pill">SQLite</span>
+              </div>
+            </article>
+
+            <article class="skills-card">
+              <h3>DevOps &amp; Infrastructure</h3>
+              <div class="pill-row">
+                <span class="pill">Microsoft Azure</span>
+                <span class="pill">Docker</span>
+                <span class="pill">Ubuntu Server</span>
+                <span class="pill">Windows Server</span>
+                <span class="pill">Pi-hole</span>
+                <span class="pill">Active Directory</span>
+                <span class="pill">Git</span>
+                <span class="pill">GitHub</span>
+                <span class="pill">Vercel</span>
+                <span class="pill">pnpm</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section-pad projects-section">
+      <div class="container">
+        <header class="projects-head">
+          <h2>Projects</h2>
+          <p>Real projects built to solve real problems, using the tools I work with daily.</p>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&w=1400&q=80" alt="WhatsApp API Local preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>WhatsApp API Local</h3>
+              <p>
+                REST API built with Node.js that connects to WhatsApp Web via whatsapp-web.js,
+                enabling programmatic messaging through simple HTTP endpoints.
+              </p>
+
+              <div class="project-tags">
+                <span class="ptag">Node.js</span>
+                <span class="ptag">Express</span>
+                <span class="ptag">whatsapp-web.js</span>
+                <span class="ptag">REST API</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="pbtn" href="https://github.com/stevenBalto" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80" alt="CRM Restaurante Bastos preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>CRM Restaurante Bastos</h3>
+              <p>
+                Customer management system for a local restaurant. Handles client registration,
+                order tracking, and a dashboard to manage daily operations.
+              </p>
+
+              <div class="project-tags">
+                <span class="ptag">PHP</span>
+                <span class="ptag">Bootstrap</span>
+                <span class="ptag">JavaScript</span>
+                <span class="ptag">CSS</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="pbtn" href="https://github.com/stevenBalto" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80" alt="BackFrontend preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>BackFrontend</h3>
+              <p>
+                Full-stack web application built with Laravel. Combines a PHP backend with
+                Blade-rendered views, Eloquent ORM, and Vite for asset bundling.
+              </p>
+
+              <div class="project-tags">
+                <span class="ptag">PHP</span>
+                <span class="ptag">Laravel</span>
+                <span class="ptag">Blade</span>
+                <span class="ptag">JavaScript</span>
+                <span class="ptag">CSS</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="pbtn" href="https://github.com/stevenBalto/BackFrontend" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1400&q=80" alt="Portfolio Personal preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Portfolio Personal</h3>
+              <p>
+                This portfolio website, built from scratch with HTML, CSS, and JavaScript.
+                No frontend framework — fully responsive and deployed on GitHub Pages.
+              </p>
+
+              <div class="project-tags">
+                <span class="ptag">HTML5</span>
+                <span class="ptag">CSS3</span>
+                <span class="ptag">JavaScript</span>
+                <span class="ptag">GitHub Pages</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="pbtn" href="https://github.com/stevenBalto/steven.github.io" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+                <a class="pbtn pbtn-demo" href="https://stevenbaltodano.me" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1400&q=80" alt="Integral Detective Game preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Integral Detective Game</h3>
+              <p>
+                Browser-based detective game with branching narrative. Players investigate clues
+                and solve cases through interactive choices and logic-driven gameplay.
+              </p>
+
+              <div class="project-tags">
+                <span class="ptag">JavaScript</span>
+                <span class="ptag">HTML5</span>
+                <span class="ptag">CSS3</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="pbtn" href="https://github.com/stevenBalto" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+                <a class="pbtn pbtn-demo" href="https://heartfelt-axolotl-8ba7bf.netlify.app/" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1400&q=80" alt="Library Database System preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Library Database System</h3>
+              <p>
+                Desktop application for managing a library's book catalog, loans, and user records.
+                Built in Java with a relational database backend as a university project.
+              </p>
+
+              <div class="project-tags">
+                <span class="ptag">Java</span>
+                <span class="ptag">MySQL</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="pbtn" href="https://github.com/stevenBalto/stevenBalto-LibraryDBSystem" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=80" alt="Azure Hybrid Infrastructure UTN preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Azure Hybrid Infrastructure — UTN</h3>
+              <p>
+                Hybrid cloud infrastructure on Microsoft Azure for UTN, centralizing authentication,
+                networking, and access control for students, faculty, and staff. Role: Security &amp; Cloud Architecture Specialist.
+              </p>
+
+              <div class="project-tags">
+                <span class="ptag">Microsoft Azure</span>
+                <span class="ptag">Active Directory</span>
+                <span class="ptag">RADIUS</span>
+                <span class="ptag">Docker</span>
+                <span class="ptag">Pi-hole</span>
+                <span class="ptag">Windows Server</span>
+                <span class="ptag">Ubuntu Server</span>
+                <span class="ptag">FreePBX</span>
+                <span class="ptag">MySQL</span>
+              </div>
+
+              <div class="project-actions">
+                <span class="pbtn pbtn-demo" style="cursor:default;opacity:.6;">
+                  <i class="fa-solid fa-lock"></i>
+                  Private
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-pad contact-section">
+      <div class="container">
+        <header class="contact-head">
+          <h2>Let's Work Together</h2>
+          <p>
+            Have a project in mind or want to collaborate? I'm always open to new opportunities
+            and interesting challenges. Let's build something together.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <article class="contact-card">
+              <div class="cicon"><i class="fa-regular fa-envelope"></i></div>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:stevenbaltodano52@gmail.com">stevenbaltodano52@gmail.com</a></p>
+              </div>
+            </article>
+
+            <article class="contact-card">
+              <div class="cicon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/stevenBalto" target="_blank" rel="noopener">github.com/stevenBalto</a></p>
+              </div>
+            </article>
+
+            <article class="contact-card">
+              <div class="cicon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h3>Location</h3>
+                <p>Guanacaste, Costa Rica</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="contact-form-wrap">
+            <div class="contact-form-card">
+              <h3>Send a Message</h3>
+              <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="2adf4b5e-abef-43b5-b29f-16a5b10dc7a8">
+                <div class="row2">
+                  <label>
+                    <span class="sr-only">Your Name</span>
+                    <input type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+                  </label>
+                  <label>
+                    <span class="sr-only">Your Email</span>
+                    <input type="email" name="email" placeholder="Your Email" autocomplete="email" required>
+                  </label>
+                </div>
+                <label>
+                  <span class="sr-only">Subject</span>
+                  <input type="text" name="subject" placeholder="Subject" autocomplete="off">
+                </label>
+                <label>
+                  <span class="sr-only">Your Message</span>
+                  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </label>
+
+                <button class="contact-submit" type="submit">
+                  <i class="fa-regular fa-paper-plane"></i>
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <script src="index.js"></script>
 </body>
 </html>
