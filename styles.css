@@ -851,6 +851,21 @@ body.light-mode .pbtn-demo {
   background: #ffffff;
 }
 
+.form-status {
+  margin: 4px 0 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+  min-height: 1.2em;
+}
+
+.form-status.ok {
+  color: #22c55e;
+}
+
+.form-status.error {
+  color: #ef4444;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -924,6 +939,129 @@ body.light-mode .btn-dark {
 
 body.light-mode .btn-dark:hover {
   background: #1a212b;
+}
+
+/* ---- Light mode: overrides for hardcoded dark-theme colors ---- */
+body.light-mode .site-header.scrolled {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body.light-mode .theme-toggle,
+body.light-mode .menu-toggle {
+  background: rgba(15, 20, 26, 0.04);
+  color: var(--text);
+}
+
+body.light-mode .menu-toggle span {
+  background: #2b333d;
+}
+
+body.light-mode .main-nav {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+body.light-mode .work-badge {
+  color: var(--text);
+  border-color: var(--line);
+  background: rgba(15, 20, 26, 0.04);
+}
+
+body.light-mode .lead {
+  color: #232a33;
+}
+
+body.light-mode .btn-light {
+  background: #0f141a;
+  color: #f6f8fb;
+}
+
+body.light-mode .social-row a {
+  color: var(--text);
+  border-color: var(--line);
+  background: rgba(15, 20, 26, 0.03);
+}
+
+body.light-mode .social-row a:hover {
+  border-color: #8b94a1;
+}
+
+body.light-mode .portrait-ring {
+  background: radial-gradient(circle at 50% 30%, rgba(15, 20, 26, 0.12), rgba(15, 20, 26, 0.03));
+}
+
+body.light-mode .portrait-wrap {
+  border-color: rgba(15, 20, 26, 0.12);
+}
+
+body.light-mode .hire-badge {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: var(--line);
+  color: var(--text);
+}
+
+body.light-mode .project-media {
+  background: rgba(15, 20, 26, 0.05);
+}
+
+body.light-mode .pbtn {
+  background: rgba(15, 20, 26, 0.04);
+  border-color: var(--line);
+  color: var(--text);
+}
+
+body.light-mode .pbtn:hover {
+  background: rgba(15, 20, 26, 0.08);
+  border-color: rgba(15, 20, 26, 0.2);
+}
+
+body.light-mode .pbtn-demo:hover {
+  background: #1a212b;
+}
+
+body.light-mode .contact-card,
+body.light-mode .contact-form-card {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+body.light-mode .cicon {
+  background: rgba(15, 20, 26, 0.05);
+  border-color: rgba(15, 20, 26, 0.1);
+  color: var(--text);
+}
+
+body.light-mode .contact-form input,
+body.light-mode .contact-form textarea {
+  background: #ffffff;
+  border-color: rgba(15, 20, 26, 0.14);
+  color: var(--text);
+}
+
+body.light-mode .contact-form input::placeholder,
+body.light-mode .contact-form textarea::placeholder {
+  color: rgba(79, 86, 97, 0.8);
+}
+
+body.light-mode .contact-form input:focus,
+body.light-mode .contact-form textarea:focus {
+  border-color: rgba(15, 20, 26, 0.35);
+  background: #ffffff;
+}
+
+body.light-mode .contact-submit {
+  background: #0f141a;
+  color: #f6f8fb;
+}
+
+body.light-mode .contact-submit:hover {
+  background: #1a212b;
+}
+
+body.light-mode .form-status.ok {
+  color: #15803d;
+}
+
+body.light-mode .form-status.error {
+  color: #b91c1c;
 }
 
 @media (max-width: 1100px) {

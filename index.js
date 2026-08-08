@@ -53,9 +53,39 @@ if (storedTheme === "light") {
 }
 
 const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
 if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
+  contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
+
+    const submitBtn = contactForm.querySelector(".contact-submit");
+    submitBtn.disabled = true;
+    formStatus.className = "form-status";
+    formStatus.textContent = "Sending...";
+
+    try {
+      const res = await fetch(contactForm.action, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(contactForm),
+      });
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        formStatus.classList.add("ok");
+        formStatus.textContent = "Message sent. Thanks for reaching out!";
+        contactForm.reset();
+      } else {
+        formStatus.classList.add("error");
+        formStatus.textContent = data.message || "Something went wrong. Please try again.";
+      }
+    } catch (err) {
+      formStatus.classList.add("error");
+      formStatus.textContent = "Network error. Please email me directly.";
+    } finally {
+      submitBtn.disabled = false;
+    }
   });
 }
 
