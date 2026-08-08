@@ -56,36 +56,23 @@ const contactForm = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
 
 if (contactForm) {
-  contactForm.addEventListener("submit", async (e) => {
+  contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const submitBtn = contactForm.querySelector(".contact-submit");
-    submitBtn.disabled = true;
-    formStatus.className = "form-status";
-    formStatus.textContent = "Sending...";
+    const to = contactForm.dataset.email;
+    const data = new FormData(contactForm);
+    const name = (data.get("name") || "").trim();
+    const email = (data.get("email") || "").trim();
+    const subject = (data.get("subject") || "").trim() || `Portfolio contact — ${name}`;
+    const message = (data.get("message") || "").trim();
 
-    try {
-      const res = await fetch(contactForm.action, {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: new FormData(contactForm),
-      });
-      const data = await res.json();
+    const body = `${message}\n\n—\n${name}\n${email}`;
+    const href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-      if (res.ok && data.success) {
-        formStatus.classList.add("ok");
-        formStatus.textContent = "Message sent. Thanks for reaching out!";
-        contactForm.reset();
-      } else {
-        formStatus.classList.add("error");
-        formStatus.textContent = data.message || "Something went wrong. Please try again.";
-      }
-    } catch (err) {
-      formStatus.classList.add("error");
-      formStatus.textContent = "Network error. Please email me directly.";
-    } finally {
-      submitBtn.disabled = false;
-    }
+    window.location.href = href;
+
+    formStatus.className = "form-status ok";
+    formStatus.textContent = "Opening your email app… if nothing happens, write me at " + to;
   });
 }
 
